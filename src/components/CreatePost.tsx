@@ -57,11 +57,6 @@ export const CreatePost = () => {
     });
   };
 
-  const handleCommunityChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const value = e.target.value;
-    setCommunityId(value ? Number(value) : null);
-  };
-
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setSelectedFile(e.target.files[0]);
